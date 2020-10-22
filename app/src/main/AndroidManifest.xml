@@ -3,7 +3,11 @@
     package="com.londonappbrewery.climapm"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-
+    //permissions
+    //for accessing internet
+    <uses-permission android:name="android.permission.INTERNET"/>
+    //for accessing location works (COARSE) best for mobile
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -14,7 +18,7 @@
 
         <activity
             android:name=".WeatherController"
-            android:screenOrientation="portrait">
+            android:screenOrientation="unspecified">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
